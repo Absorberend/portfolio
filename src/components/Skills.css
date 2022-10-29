@@ -1,0 +1,32 @@
+.skills__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    padding: 0.5em;
+    width: 8.75em;
+    height: 2.5em;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+}
+
+.skill__light {
+    background-color: var(--light-mode-bg);
+}
+
+.skill__dark {
+    background-color: var(--dark-mode-bg);
+}
+
+.skill img {
+    width: 1.75em;
+    max-height: 1.5em;
+}

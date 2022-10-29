@@ -1,0 +1,28 @@
+.about__section {
+    padding: 1.5em;
+    border-radius: 0.5em;
+    letter-spacing: 0.05em;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+    max-width: calc(1024px - 2em);
+    margin: 0 auto;
+}
+
+.about__section__light {
+    background-color: var(--light-mode-EL);
+}
+
+.about__section__dark {
+    background-color: var(--dark-mode-EL);
+}
+
+.about__header {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.about__text {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+}
