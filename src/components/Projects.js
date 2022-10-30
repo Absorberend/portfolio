@@ -31,14 +31,6 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>RESTCountryAPI</h3>
           <p>
-            This is my solution for the "REST Country API" challenge of
-            <a 
-              href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" 
-              target="_blank" rel="noopener noreferrer" 
-              className="project__info__text__p__link"
-            >
-              Frontend Mentor
-            </a>.
             This project is build with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
             You can search 200+ countries and view detailed information on each of the country's pages.
             The purpose of this challenge was to learn how to fetch data via an API call and show this data to the user on-screen.
