@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Homepage from "../../assets/RealEstateCare/Homepage.png";
 import AssignedReports from "../../assets/RealEstateCare/Assigned-Reports.png";

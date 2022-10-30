@@ -12,7 +12,7 @@ export default function Navbar({onThemeChangeClick, theme}) {
         <a className="navbar__pic__wrapper" href="/">
           <img 
             src={persPic} 
-            alt="personal portfolio picture" 
+            alt="personal portfolio" 
             className="navbar__pic" 
           />
         </a>

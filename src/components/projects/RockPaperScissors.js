@@ -1,7 +1,5 @@
 import React from 'react'
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-
 import RPSGHomepage from "../../assets/RockPaperScissors/RPSG-Homepage.png";
 import RPSGPickScreen from "../../assets/RockPaperScissors/RPSG-PickScreen.png";
 import RPSGWinScreen from "../../assets/RockPaperScissors/RPSG-WinScreen.png";

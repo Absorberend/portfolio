@@ -1,7 +1,5 @@
 import React from 'react'
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-
 import RCAHome from "../../assets/RESTCountryAPI/RCA-Homepage.png";
 import RCAHomeInfo from "../../assets/RESTCountryAPI/RCA-Homepage-info.png";
 import RCACountryInfo from "../../assets/RESTCountryAPI/RCA-Country-info-page.png";

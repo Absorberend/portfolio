@@ -8,6 +8,8 @@ import eyeIcon from "../assets/eye.svg";
 import RestCountryAPI from "./projects/RESTCountryAPI";
 import RockPaperScissors from "./projects/RockPaperScissors";
 import RPSGHomepage from "../assets/RockPaperScissors/RPSG-Homepage.png";
+import DBHome from "../assets/DirtyBombFanSite/DB-Homepage.png";
+import DirtyBombFanSite from "./projects/DirtyBombFanSite";
 
 export default function Projects({theme, matches, onProjectModalClick}) {
 
@@ -143,6 +145,48 @@ export default function Projects({theme, matches, onProjectModalClick}) {
             </a>
             <a 
               href="https://ifyoureadthisurecool.netlify.app/" 
+              className={`projects__info__button projects__info__button__${theme}`}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img src={eyeIcon} alt="view icon" />
+              View live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className={`project__container project__container__${theme}`}>
+        {!matches && (
+          <div className="project__carousel__wrapper">
+            <DirtyBombFanSite />
+          </div>
+        )}
+        {matches && (
+          <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="DirtyBomb">
+              <span hidden>Open project carousel</span>
+              <img src={DBHome} alt="" className="project__carousel__image"/>
+          </button>
+          )}
+        <div className="project__info__text">
+          <h3>Dirty Bomb Fan Page</h3>
+          <p>
+            This is a pure HTML/CSS project with just a few lines of JS. 
+            It was a final assignment for a CSS course (HBO Frontend developer at the LOI) I was following.
+            This project resulted in an A+!
+          </p>
+          <div className="project__info__text__links">
+            <a 
+              href="https://github.com/Absorberend/dirty-bomb-fan-site" 
+              className={`projects__info__button projects__info__button__${theme}`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img src={githubIcon} alt="github icon" />
+              View code
+            </a>
+            <a 
+              href="https://rococo-lokum-fe4de0.netlify.app/" 
               className={`projects__info__button projects__info__button__${theme}`}
               target="_blank" 
               rel="noopener noreferrer"
