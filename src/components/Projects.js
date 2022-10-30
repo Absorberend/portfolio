@@ -31,9 +31,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>RESTCountryAPI</h3>
           <p>
-            This project is build with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
+            This project is built with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
             You can search 200+ countries and view detailed information on each of the country's pages.
-            The purpose of this challenge was to learn how to fetch data via an API call and show this data to the user on-screen.
+            Data was fetched via an API call and shows this data to the user on-screen.
           </p>
           <div className="project__info__text__links">
             <a 
@@ -74,7 +74,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <h3>RealEstateCare</h3>
           <p>
             The fictional company RealEstateCare in this case needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
-            My solution is a mobile web app (PWA) build with React and is also fully functional offline. With this app personnel can fill in inspection reports on sight while being offline.
+            My solution is a mobile web app (PWA) built with React and is also fully functional offline. With this app personnel can fill in inspection reports on sight while being offline.
             The data is stored in real time in a Firebase database. The 2FA is simulated with the localStorage (case requirement).
           </p>
           <div className="project__info__text__links">
