@@ -3,7 +3,7 @@
     height: 7.4em;
     display: flex;
     flex-direction: row;
-    gap: 0.6em;
+    gap: 1em;
     padding: 0.5em 1em;
     max-width: 1024px;
     margin: 0 auto;
@@ -15,7 +15,7 @@
     height: 100%;
     width: 100%;
     min-width: 10em;
-    padding-block-start: 0.75em;
+    padding-block-start: 1.25em;
 }
 
 .navbar__pic__wrapper {
@@ -55,13 +55,13 @@
     padding: 0;
     margin: 0;
     font-weight: 700;
-    font-size: 0.85em;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .nav__homepage__divider {
-    width: 3.9em;
+    width: 2.5em;
     height: 4px;
     border-radius: 1em;
     margin: 0.25em 0 1.25em 0;   
@@ -79,13 +79,15 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    max-width: 12em;
+    max-width: 13em;
+    min-width: 13em;
+    flex-wrap: nowrap;
 }
 
 .nav__links {
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.7em;  
+    font-size: 0.8em;  
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -95,64 +97,18 @@
 }
 
 .nav__links__dark {
-    color: var(--dark-mode-text);
+    color: var(--dark-mode-input);
 }
 
-/*Toggle switch*/
-.theme-switch-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-block-start: 0.15em;
-    width: 5em;
-    height: 1.75em;
+.theme__switch__button {
+    background-color: inherit;
+    border: none;
 }
 
-.theme-switch {
-    display: inline-block;
-    height: 24px;
-    position: relative;
-    width: 40px;
+.theme__switch__img {
+    width: 2em;
 }
 
-.theme-switch input {
-    display:none;
-}
-
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-
-.slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 16px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 16px;
-}
-
-input:checked + .slider {
-    background-color: var(--light-mode-input);
-}
-
-input:checked + .slider:before {
-    transform: translateX(16px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+.theme__switch__img__dark {
+    filter: invert(100%);
 }

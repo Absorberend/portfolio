@@ -1,19 +1,21 @@
 import React from "react";
 import "./Navbar.css";
 import persPic from "../assets/PersPic.png";
+import sunOff from "../assets/sun-off.svg";
+import sunOn from "../assets/sun.svg";
 
 
 export default function Navbar({onThemeChangeClick, theme}) {
   return (
     <header className={`App__header__${theme}`}>
       <div className="navbar__container">
-        <div className="navbar__pic__wrapper">
+        <a className="navbar__pic__wrapper" href="/">
           <img 
             src={persPic} 
             alt="personal portfolio picture" 
             className="navbar__pic" 
           />
-        </div>
+        </a>
         <nav  className="navbar__nav">
           <div className="nav__homepage">
             <a className={`nav__homepage__link nav__homepage__link__${theme}`} href="/">
@@ -27,12 +29,14 @@ export default function Navbar({onThemeChangeClick, theme}) {
             <a href="/" className={`nav__links nav__links__${theme}`}>Contact</a>
           </div>
         </nav>
-        <div className="theme-switch-wrapper">
-          <label className="theme-switch" htmlFor="checkbox" title="theme switcher">
-            <span hidden>Theme switcher</span>
-            <input type="checkbox" id="checkbox" onChange={onThemeChangeClick} checked={theme === "light" ? false : true}/>
-            <div className="slider round"></div>
-          </label>
+        <div>
+          <button onClick={onThemeChangeClick} className="theme__switch__button">
+            <img 
+              src={theme === "light" ? sunOn : sunOff} 
+              alt="theme icon"
+              className={`theme__switch__img theme__switch__img__${theme}`} 
+            />
+          </button>
         </div>
       </div>
     </header>

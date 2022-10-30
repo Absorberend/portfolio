@@ -12,7 +12,7 @@ export default function About({theme}) {
         I decided to give up my stable career in accounting and take on this great web development adventure. 
         I'm very eager to learn and provide as much value as I possibly can to your project or company.
       </p>
-      <p className="about__text"> Here are the technologies I've got experience with so far:</p>
+      <p className="about__text"> These are the technologies I've got experience with so far:</p>
       <Skills theme={theme} />
     </section>
   )
