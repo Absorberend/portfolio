@@ -172,8 +172,8 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <h3>Dirty Bomb Fan Page</h3>
           <p>
             This is a pure HTML/CSS project with just a few lines of JS.
-            This project is about a game I used to play constantly.
-            It was a final assignment for a CSS course (HBO Frontend developer at the LOI) I was following.
+            This project is about a game I used to play vigorously.
+            It was also a final assignment for a CSS course (HBO Frontend developer at the LOI) I was following.
             This project resulted in an A+!
           </p>
           <div className="project__info__text__links">
