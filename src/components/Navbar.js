@@ -24,8 +24,8 @@ export default function Navbar({onThemeChangeClick, theme}) {
             <div className={`nav__homepage__divider nav__homepage__divider__${theme}`}></div>
           </div>
           <div className="nav__links__container">
-            <a href="/" className={`nav__links nav__links__${theme}`}>About</a>
-            <a href="/" className={`nav__links nav__links__${theme}`}>Projects</a>
+            <a href="#About" className={`nav__links nav__links__${theme}`}>About</a>
+            <a href="#Projects" className={`nav__links nav__links__${theme}`}>Projects</a>
             <a href="/" className={`nav__links nav__links__${theme}`}>Contact</a>
           </div>
         </nav>

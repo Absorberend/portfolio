@@ -1,10 +1,24 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
+import Projects from "./components/Projects";
+import RealEstateCare from "./components/projects/RealEstateCare";
+import useOutsideClick from './hooks/useOutsideClick.js';
+import useCloseOnEsc from './hooks/useCloseOnEsc';
+import iconClose from "./assets/icon-close.svg";
+import RestCountryAPI from "./components/projects/RESTCountryAPI";
+import RockPaperScissors from "./components/projects/RockPaperScissors";
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
+  const [matches, setMatches] = useState(window.matchMedia("(min-width: 50em)").matches);
+  const [openModal, setOpenModal] = useState(false);
+  const [projectModal, setProjectModal] = useState("");
+  const ref = useRef();
+
+  useOutsideClick(ref, () => setOpenModal(false));
+  useCloseOnEsc(() => setOpenModal(false));
 
   useEffect(() => {
     document.body.removeAttribute('class');
@@ -12,6 +26,10 @@ function App() {
 
     localStorage.setItem("theme", theme); 
   }, [theme]);
+
+  useEffect(() => {
+    window.matchMedia("(min-width: 50em)").addEventListener("change", e => setMatches( e.matches ));
+  }, [])
 
   const handleThemeChangeClick = () => {
     if (theme === "light") {
@@ -21,11 +39,43 @@ function App() {
     }
   }
 
+  const handleProjectModalClick = (e) => {
+    setProjectModal(e.currentTarget.dataset.project);
+    setOpenModal(true);
+  }
+
   return (
     <>
+      {openModal && (
+        <div className="projects__modal__container">
+          <div className="projects__modal__wrapper" ref={ref}>
+            <div className="projects__modal__close__icon" onClick={() => setOpenModal(false)}>
+              <img 
+                src={iconClose} 
+                alt="close modal icon" 
+                className={`projects__modal__close__icon__img projects__modal__close__icon__img__${theme}`}
+              />
+            </div>
+            {projectModal === "RealEstateCare" && (
+              <RealEstateCare openModal={openModal} />
+            )}
+            {projectModal === "RESTCountryAPI" && (
+              <RestCountryAPI openModal={openModal} />
+            )}
+            {projectModal === "RPSG" && (
+              <RockPaperScissors openModal={openModal} />
+            )}
+          </div>
+        </div>
+      )}
       <Navbar onThemeChangeClick={handleThemeChangeClick} theme={theme} />
-      <main className={`App__main__${theme}`} >
+      <main className={`App__main__${theme}`}>
         <About theme={theme} />
+        <Projects 
+          theme={theme} 
+          matches={matches} 
+          onProjectModalClick={handleProjectModalClick} 
+        />
       </main>
     </>
   );

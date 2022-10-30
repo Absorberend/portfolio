@@ -1,0 +1,137 @@
+.project__section {
+    max-width: calc(1024px - 2em);
+    margin: 0 auto;
+}
+
+.project__section h2 {
+    max-width: calc(1024px - 2em);
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2em 0 0.75em 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.project__container {
+    padding: 1em;
+    margin-block-end: 2.5em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project__container__light {
+    background-color: var(--light-mode-EL);
+}
+
+.project__container__dark {
+    background-color: var(--dark-mode-EL);
+}
+
+.project__carousel__wrapper {
+    width: 100%;
+    max-width: 50em;
+    border: 1px solid black;
+}
+
+.project__carousel__image {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.project__carousel__modal__button {
+    background-color: inherit;
+    border: none;
+    cursor: zoom-in;
+    display: flex;
+}
+
+.project__info__text {
+    padding: 0 0 0 0.1em;
+    letter-spacing: 0.05em;
+}
+
+.project__info__text h3 {
+    padding: 0.75em 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.project__info__text p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+.project__info__text__p__link {
+    color: var(--dark-mode-input);
+    padding-inline-start: 5px;
+}
+
+.project__info__text__links {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.projects__info__button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.45em;
+    width: 8.75em;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    align-items: center;
+}
+
+.projects__info__button img {
+    width: 1.5em;
+    height: 2em;
+}
+
+.projects__info__button__dark {
+    color: var(--dark-mode-text);
+    border: 0.20em solid var(--dark-mode-bg);
+}
+
+.projects__info__button__light {
+    color: var(--light-mode-text);
+    border: 0.20em solid var(--light-mode-input);
+}
+
+
+@media screen and (min-width: 800px) {
+    .project__container {
+        flex-direction: row;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .project__info__text {
+        width: 50%;
+    }
+
+    .project__carousel__modal__button {
+        width: 50%;
+    }
+
+    .project__info__text h3 {
+        padding: 0;
+        text-align: start;
+    }
+
+    .project__info__text__links {
+        justify-content: flex-start;
+    }
+  }

@@ -4,7 +4,7 @@ import Skills from "./Skills.js";
 
 export default function About({theme}) {
   return (
-    <section className={`about__section about__section__${theme}`}>
+    <section className={`about__section about__section__${theme}`} id="About">
       <h2 className="about__header">👋 Hi, I'm Berend.</h2>
       <p className="about__text">
         I'm a frontend developer from the Netherlands. After experiencing the endless possibilities within the crypto space I got very passionate about web development.

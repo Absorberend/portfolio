@@ -103,6 +103,7 @@
 .theme__switch__button {
     background-color: inherit;
     border: none;
+    cursor: pointer;
 }
 
 .theme__switch__img {
