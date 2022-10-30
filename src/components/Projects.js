@@ -39,6 +39,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
             >
               Frontend Mentor
             </a>.
+            This project is build with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
             You can search 200+ countries and view detailed information on each of the country's pages.
             The purpose of this challenge was to learn how to fetch data via an API call and show this data to the user on-screen.
           </p>
@@ -81,7 +82,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <h3>RealEstateCare</h3>
           <p>
             The fictional company RealEstateCare in this case needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
-            My solution is a mobile web app (PWA) with full offline functionality. With this app personnel can fill in inspection reports on sight while being offline.
+            My solution is a mobile web app (PWA) build with React and is also fully functional offline. With this app personnel can fill in inspection reports on sight while being offline.
             The data is stored in real time in a Firebase database. The 2FA is simulated with the localStorage (case requirement).
           </p>
           <div className="project__info__text__links">
@@ -122,15 +123,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Rock Paper Scissors Game</h3>
           <p>
-          This is my solution for the "Rock Paper Scissors Game" challenge of
-            <a 
-              href="https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH" 
-              target="_blank" rel="noopener noreferrer" 
-              className="project__info__text__p__link"
-            >
-              Frontend Mentor
-            </a>.
-            This was my first application in React to get the basics down. 
+            This application is build in React. I uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
             I also fiddled around with sound effects, which was a lot of fun!
           </p>
           <div className="project__info__text__links">
