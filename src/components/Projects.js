@@ -115,7 +115,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Rock Paper Scissors Game</h3>
           <p>
-            This application is build in React. It uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
+            This application is built with React. It uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
             It also has sound effects. 
           </p>
           <div className="project__info__text__links">
