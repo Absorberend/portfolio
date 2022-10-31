@@ -7,7 +7,7 @@ export default function About({theme}) {
     <section className={`about__section about__section__${theme}`} id="About">
       <h2 className="about__header">👋 Hi, I'm Berend.</h2>
       <p className="about__text">
-        I'm a frontend developer from the Netherlands. After experiencing the endless possibilities within the crypto space I got very passionate about web development.
+        I'm a frontend developer from the Netherlands. After experiencing the endless possibilities within the crypto space I became very passionate about web development.
         Creating webpages that truly come to life and provide value to users is just astonishing to me. 
         I decided to give up my stable career in accounting and take on this great web development adventure. 
         I'm very eager to learn and provide as much value as I possibly can to your project or company.

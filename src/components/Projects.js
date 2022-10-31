@@ -115,7 +115,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Rock Paper Scissors Game</h3>
           <p>
-            This project simulates the rock paper scissors game.
+            This project simulates the Rock Paper Scissors game.
             It uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
             It also has sound effects. This application is built with React. 
           </p>
@@ -157,9 +157,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Dirty Bomb Fan Page</h3>
           <p>
-            This project is fan site about a game I used to play vigorously.
+            This project is a fan page about a game I used to play vigorously.
             This is a pure HTML/CSS project with just a few lines of JavaScript.
-            It was also a final assignment for a CSS course (part of HBO Frontend developer at the LOI) I was following.
+            It was also a final assignment for a CSS course (part of HBO Frontend developer at the LOI) I was attending.
             This project resulted in an A+!
           </p>
           <div className="project__info__text__links">
