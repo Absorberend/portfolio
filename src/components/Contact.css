@@ -40,6 +40,18 @@
     background-color: var(--light-mode-EL);
 }
 
+.contact__social__media {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    padding: 0.75em 0;
+    justify-content: center;
+}
+
+.contact__social__media img {
+    width: 40px;
+}
+
 input[type=text], input[type=email], textarea {
     font-weight: 300;
     font-size: 1em;

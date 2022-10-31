@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import "./Contact.css";
+import mailIcon from "../assets/mail.svg";
+import linkedInIcon from "../assets/brand-icons/brand-linkedin.svg";
+import githubIcon from "../assets/brand-icons/brand-github.svg";
 
 export default function Contact({theme}) {
   const [name, setName] = useState("");
@@ -14,8 +17,16 @@ export default function Contact({theme}) {
         className={`contact__form contact__form__${theme}`} 
         name="contact__form"
       >
-        <div>
-
+        <div className="contact__social__media">
+          <a href="/" >
+            <img src={linkedInIcon} alt="linkedin icon" />
+          </a>
+          <a href="https://github.com/Absorberend" target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="github icon" />
+          </a>
+          <a href="mailto:berend_wout@live.nl" target="_blank" rel="noopener noreferrer">
+            <img src={mailIcon} alt="mail icon" />
+          </a>
         </div>
         <label htmlFor="contact__name">
           Name
