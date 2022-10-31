@@ -50,6 +50,11 @@
 
 .contact__social__media img {
     width: 40px;
+    height: 41px;
+}
+
+.contact__social__media__github {
+    width: 37.5px !important;
 }
 
 input[type=text], input[type=email], textarea {
