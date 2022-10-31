@@ -32,7 +32,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <h3>RESTCountryAPI</h3>
           <p>
             With this project you can search 200+ countries and view detailed information on each of the country's pages.
-            The fetched data is shown to the user on-screen by using sereval map and/or filter functions.
+            The fetched data is shown to the user on-screen by making use of sereval map and/or filter functions.
             This project is built with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
           </p>
           <div className="project__info__text__links">
