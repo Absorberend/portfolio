@@ -51,6 +51,8 @@
 .project__info__text {
     padding: 0 0 0 0.1em;
     letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
 }
 
 .project__info__text h3 {
@@ -63,11 +65,6 @@
     font-weight: 300;
     font-size: 1em;
     line-height: 1.75em;
-}
-
-.project__info__text__p__link {
-    color: var(--dark-mode-input);
-    padding-inline-start: 5px;
 }
 
 .project__info__text__links {
@@ -90,7 +87,7 @@
     border-radius: 0.5em;
     font-size: 1em;
     font-weight: 500;
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 1);
     cursor: pointer;
     align-items: center;
 }
@@ -102,13 +99,13 @@
 
 .projects__info__button__dark {
     color: var(--dark-mode-text);
-    border: 0.10em solid var(--dark-mode-bg);
+    background-color: var(--dark-mode-bg);
     text-shadow: 2px 2px black;
 }
 
 .projects__info__button__light {
     color: var(--light-mode-text);
-    border: 0.10em solid var(--light-mode-input);
+    background-color: var(--light-mode-bg);
 }
 
 
