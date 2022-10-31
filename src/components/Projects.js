@@ -31,9 +31,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>RESTCountryAPI</h3>
           <p>
-            This project is built with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
-            You can search 200+ countries and view detailed information on each of the country's pages.
+            With this project you can search 200+ countries and view detailed information on each of the country's pages.
             The fetched data is shown to the user on-screen by using sereval map and/or filter functions.
+            This project is built with React and uses React Router as routing. Several custom Hooks are used to fetch data or close modals etc.
           </p>
           <div className="project__info__text__links">
             <a 
@@ -115,8 +115,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Rock Paper Scissors Game</h3>
           <p>
-            This application is built with React. It uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
-            It also has sound effects. 
+            This project simulates the rock paper scissors game.
+            It uses some JavaScript seTimeOut functions to facilitate the game mechanics and timings.
+            It also has sound effects. This application is built with React. 
           </p>
           <div className="project__info__text__links">
             <a 
@@ -156,9 +157,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>Dirty Bomb Fan Page</h3>
           <p>
+            This project is fan site about a game I used to play vigorously.
             This is a pure HTML/CSS project with just a few lines of JavaScript.
-            This project is about a game I used to play vigorously.
-            It was also a final assignment for a CSS course (HBO Frontend developer at the LOI) I was following.
+            It was also a final assignment for a CSS course (part of HBO Frontend developer at the LOI) I was following.
             This project resulted in an A+!
           </p>
           <div className="project__info__text__links">
