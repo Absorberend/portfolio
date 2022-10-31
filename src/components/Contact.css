@@ -1,0 +1,88 @@
+.contact__section {
+    max-width: calc(500px);
+    margin: 0 auto;
+}
+
+.contact__section h2 {
+    max-width: calc(1024px - 2em);
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.5em 0 0.75em 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact__form__dark {
+    background-color: var(--dark-mode-EL);
+}
+
+.contact__form__light {
+    background-color: var(--light-mode-EL);
+}
+
+input[type=text], input[type=email], textarea {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+    font-family: 'Rubik', sans-serif;
+    padding: 4px 5px;
+    border-radius: 4px;
+    color: var(--light-mode-text);
+    background-color: var(--light-mode-bg);
+}
+
+.input__dark__theme {
+    border: 2px solid var(--dark-mode-bg);
+}
+
+.input__light__theme {
+    border: 2px solid var(--light-mode-input);
+}
+
+.contact__submit__button {
+    margin: 0.75em auto;
+    width: 7.5em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+    font-family: 'Rubik', sans-serif;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.contact__submit__button__dark {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+    text-shadow: 2px 2px black;
+}
+
+.contact__submit__button__light {
+    background-color: var(--light-mode-EL);
+    color: var(--light-mode-text);
+}
