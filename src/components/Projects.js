@@ -75,7 +75,12 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <p>
             The fictional company RealEstateCare in this case needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
             My solution is a mobile web app (PWA) built with React and is fully functional offline. With this app personnel can fill in inspection reports on sight while being offline.
-            The data is stored in real time in a Firebase database. The 2FA is simulated with the localStorage (case requirement).
+            The data is stored in real time in a Firebase database. The 2FA is simulated with the localStorage (case requirement). This project was the final assignment for a Frameworks course (part of HBO Frontend developer at the LOI) I was attending. It resulted in an A+!
+            <br />
+            <br />
+            Use following credentials to login:
+            <br />
+            D.smit 1111 or S.dvries 2222
           </p>
           <div className="project__info__text__links">
             <a 
