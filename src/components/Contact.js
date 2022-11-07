@@ -37,13 +37,25 @@ export default function Contact({theme}) {
         ref={form}
       >
         <div className="contact__social__media">
-          <a href="/" >
+          <a 
+            href="https://www.linkedin.com/in/berend-van-t-wout/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img src={linkedInIcon} alt="linkedin icon" />
           </a>
-          <a href="https://github.com/Absorberend" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="https://github.com/Absorberend" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img src={githubIcon} alt="github icon" className="contact__social__media__github" />
           </a>
-          <a href="mailto:berend_wout@live.nl" target="_blank" rel="noopener noreferrer">
+          <a 
+            href="mailto:berend_wout@live.nl" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <img src={mailIcon} alt="mail icon" />
           </a>
         </div>
