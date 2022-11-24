@@ -8,8 +8,8 @@ import eyeIcon from "../assets/eye.svg";
 import RestCountryAPI from "./projects/RESTCountryAPI";
 import RockPaperScissors from "./projects/RockPaperScissors";
 import RPSGHomepage from "../assets/RockPaperScissors/RPSG-Homepage.png";
-import DBHome from "../assets/DirtyBombFanSite/DB-Homepage.png";
-import DirtyBombFanSite from "./projects/DirtyBombFanSite";
+import IVHome from "../assets/inVirtuaPage/IV-homepage.png";
+import InVirtuaPage from "./projects/InVirtuaPage";
 
 export default function Projects({theme, matches, onProjectModalClick}) {
 
@@ -61,6 +61,49 @@ export default function Projects({theme, matches, onProjectModalClick}) {
       <div className={`project__container project__container__${theme}`}>
         {!matches && (
           <div className="project__carousel__wrapper">
+            <InVirtuaPage/>
+          </div>
+        )}
+        {matches && (
+          <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="in-Virtua">
+              <span hidden>Open project carousel</span>
+              <img src={IVHome} alt="" className="project__carousel__image"/>
+          </button>
+          )}
+        <div className="project__info__text">
+          <h3>in-Virtua homepage</h3>
+          <p>
+            This is the homepage of a virtual reality startup called in-Virtua.
+            The page is about showcasing and explaining their work and also about what they can do for potential customers.
+            It's built with React and uses packages for the slider, text animations and qoutes carousel.
+            It also has full page scrolling and is fully responsive. 
+          </p>
+          <div className="project__info__text__links">
+            <a 
+              href="https://github.com/Absorberend/in-Virtua" 
+              className={`projects__info__button projects__info__button__${theme}`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img src={githubIcon} alt="github icon" />
+              View code
+            </a>
+            <a 
+              href="https://bejewelled-trifle-ec8c87.netlify.app/" 
+              className={`projects__info__button projects__info__button__${theme}`}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <img src={eyeIcon} alt="view icon" />
+              View live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className={`project__container project__container__${theme}`}>
+        {!matches && (
+          <div className="project__carousel__wrapper">
             <RealEstateCare />
           </div>
         )}
@@ -73,12 +116,12 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         <div className="project__info__text">
           <h3>RealEstateCare</h3>
           <p>
-            The fictional company RealEstateCare in this case needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
-            My solution is a mobile web app (PWA) built with React and is fully functional offline. With this app personnel can fill in inspection reports on sight while being offline.
-            The data is stored in real time in a Firebase database. The 2FA is simulated with the localStorage (case requirement). This project was the final assignment for a Frameworks course (part of HBO Frontend developer at the LOI) I was attending. It resulted in an A+!
+            The fictional company RealEstateCare needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
+            My solution is a mobile web app (PWA) built with React and is fully functional offline. It pass the Lighthouse test.
+            The data is exchanged in real time between Firebase and the front-end. The 2FA is simulated with the localStorage (case requirement). This project was the final assignment for a Frameworks course (part of HBO Frontend developer at the LOI) I was attending. It resulted in an A+!
             <br />
             <br />
-            Use following credentials to login:
+            Use the following credentials to login:
             <br />
             D.smit 1111 or S.dvries 2222
           </p>
@@ -136,49 +179,6 @@ export default function Projects({theme, matches, onProjectModalClick}) {
             </a>
             <a 
               href="https://ifyoureadthisurecool.netlify.app/" 
-              className={`projects__info__button projects__info__button__${theme}`}
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <img src={eyeIcon} alt="view icon" />
-              View live
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className={`project__container project__container__${theme}`}>
-        {!matches && (
-          <div className="project__carousel__wrapper">
-            <DirtyBombFanSite />
-          </div>
-        )}
-        {matches && (
-          <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="DirtyBomb">
-              <span hidden>Open project carousel</span>
-              <img src={DBHome} alt="" className="project__carousel__image"/>
-          </button>
-          )}
-        <div className="project__info__text">
-          <h3>Dirty Bomb Fan Page</h3>
-          <p>
-            This project is a fan page about a game I used to play vigorously.
-            This is a pure HTML/CSS project with just a few lines of JavaScript.
-            It was also a final assignment for a CSS course (part of HBO Frontend developer at the LOI) I was attending.
-            This project resulted in an A+!
-          </p>
-          <div className="project__info__text__links">
-            <a 
-              href="https://github.com/Absorberend/dirty-bomb-fan-site" 
-              className={`projects__info__button projects__info__button__${theme}`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <img src={githubIcon} alt="github icon" />
-              View code
-            </a>
-            <a 
-              href="https://rococo-lokum-fe4de0.netlify.app/" 
               className={`projects__info__button projects__info__button__${theme}`}
               target="_blank" 
               rel="noopener noreferrer"

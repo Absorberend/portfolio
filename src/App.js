@@ -11,7 +11,7 @@ import useCloseOnEsc from './hooks/useCloseOnEsc';
 import iconClose from "./assets/icon-close.svg";
 import RestCountryAPI from "./components/projects/RESTCountryAPI";
 import RockPaperScissors from "./components/projects/RockPaperScissors";
-import DirtyBombFanSite from "./components/projects/DirtyBombFanSite";
+import InVirtuaPage from "./components/projects/InVirtuaPage";
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
@@ -68,8 +68,8 @@ function App() {
             {projectModal === "RPSG" && (
               <RockPaperScissors openModal={openModal} />
             )}
-            {projectModal === "DirtyBomb" && (
-              <DirtyBombFanSite openModal={openModal} />
+            {projectModal === "in-Virtua" && (
+              <InVirtuaPage openModal={openModal} />
             )}
           </div>
         </div>
