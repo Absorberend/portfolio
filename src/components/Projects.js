@@ -71,9 +71,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           </button>
           )}
         <div className="project__info__text">
-          <h3>in-Virtua homepage</h3>
+          <h3>in-Virtua page</h3>
           <p>
-            This is the homepage of a virtual reality startup called in-Virtua.
+            This is the page of a virtual reality startup called in-Virtua.
             The page is about showcasing and explaining their work and also about what they can do for potential customers.
             It's built with React and uses packages for the slider, text animations and qoutes carousel.
             It also has full page scrolling and is fully responsive. 
@@ -117,7 +117,7 @@ export default function Projects({theme, matches, onProjectModalClick}) {
           <h3>RealEstateCare</h3>
           <p>
             The fictional company RealEstateCare needed a (mobile) solution to digitise their inspection reports and integrate them into their already existing workflow.
-            My solution is a mobile web app (PWA) built with React and is fully functional offline. It pass the Lighthouse test.
+            My solution is a mobile web app (PWA) built with React and is fully functional offline. It passes the Lighthouse test.
             The data is exchanged in real time between Firebase and the front-end. The 2FA is simulated with the localStorage (case requirement). This project was the final assignment for a Frameworks course (part of HBO Frontend developer at the LOI) I was attending. It resulted in an A+!
             <br />
             <br />
