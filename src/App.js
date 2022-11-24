@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import RealEstateCare from "./components/projects/RealEstateCare";
 import useOutsideClick from './hooks/useOutsideClick.js';
 import useCloseOnEsc from './hooks/useCloseOnEsc';
@@ -12,6 +11,10 @@ import iconClose from "./assets/icon-close.svg";
 import RestCountryAPI from "./components/projects/RESTCountryAPI";
 import RockPaperScissors from "./components/projects/RockPaperScissors";
 import InVirtuaPage from "./components/projects/InVirtuaPage";
+
+// eslint-disable-next-line
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+//Is actually used
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
