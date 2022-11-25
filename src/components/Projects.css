@@ -46,6 +46,7 @@
     border: none;
     cursor: zoom-in;
     display: flex;
+    height: fit-content;
 }
 
 .project__info__text {
