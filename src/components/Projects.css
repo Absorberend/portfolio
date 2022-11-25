@@ -133,4 +133,23 @@
     .project__info__text__links {
         justify-content: flex-start;
     }
+
+    .project__carousel__image {
+        border: none;
+    }
+
+    .project__img--hover--zoom {
+        height: fit-content; 
+        overflow: hidden; 
+        border: 1px solid black;
+    }
+  
+    .project__img--hover--zoom img {
+        transition: transform .75s ease;
+        margin-block-end: -4px;
+    }
+    
+    .project__img--hover--zoom:hover img {
+        transform: scale(1.5);
+    }
   }

@@ -25,7 +25,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         {matches && (
           <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="RESTCountryAPI">
               <span hidden>Open project carousel</span>
-              <img src={RCAHome} alt="" className="project__carousel__image"/>
+              <div className="project__img--hover--zoom">
+                <img src={RCAHome} alt="" className="project__carousel__image"/>
+              </div>
           </button>
           )}
         <div className="project__info__text">
@@ -67,7 +69,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         {matches && (
           <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="in-Virtua">
               <span hidden>Open project carousel</span>
-              <img src={IVHome} alt="" className="project__carousel__image"/>
+              <div className="project__img--hover--zoom">
+                <img src={IVHome} alt="" className="project__carousel__image"/>
+              </div>
           </button>
           )}
         <div className="project__info__text">
@@ -110,7 +114,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         {matches && (
           <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="RealEstateCare">
               <span hidden>Open project carousel</span>
-              <img src={Homepage} alt="" className="project__carousel__image"/>
+              <div className="project__img--hover--zoom">
+                <img src={Homepage} alt="" className="project__carousel__image"/>
+              </div>
           </button>
           )}
         <div className="project__info__text">
@@ -157,7 +163,9 @@ export default function Projects({theme, matches, onProjectModalClick}) {
         {matches && (
           <button className="project__carousel__modal__button" onClick={(e) => onProjectModalClick(e)} data-project="RPSG">
               <span hidden>Open project carousel</span>
-              <img src={RPSGHomepage} alt="" className="project__carousel__image"/>
+              <div className="project__img--hover--zoom">
+                <img src={RPSGHomepage} alt="" className="project__carousel__image"/>
+              </div>
           </button>
           )}
         <div className="project__info__text">
